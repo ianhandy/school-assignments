@@ -1,0 +1,22 @@
+	Time to First Fixation_IRN-dft.wmv_Map_N	Time to First Fixation_IRN-dft.wmv_Map_Mean	Time to First Fixation_IRN-dft.wmv_Map_Sum	Time to First Fixation_IRN-dft.wmv_Map_Stdev	Time to First Fixation_IRN-dft.wmv_Pseudocode_N	Time to First Fixation_IRN-dft.wmv_Pseudocode_Mean	Time to First Fixation_IRN-dft.wmv_Pseudocode_Sum	Time to First Fixation_IRN-dft.wmv_Pseudocode_Stdev	Time to First Fixation_IRN-dft.wmv_stack_N	Time to First Fixation_IRN-dft.wmv_stack_Mean	Time to First Fixation_IRN-dft.wmv_stack_Sum	Time to First Fixation_IRN-dft.wmv_stack_Stdev	Time to First Fixation_IRN-dft.wmv_Not on AOI_N	Time to First Fixation_IRN-dft.wmv_Not on AOI_Mean	Time to First Fixation_IRN-dft.wmv_Not on AOI_Sum	Time to First Fixation_IRN-dft.wmv_Not on AOI_Stdev	Time to First Fixation_IRN-dft.wmv_All AOIs_N	Time to First Fixation_IRN-dft.wmv_All AOIs_Mean	Time to First Fixation_IRN-dft.wmv_All AOIs_Sum	Time to First Fixation_IRN-dft.wmv_All AOIs_Stdev
+P2- Trial 1	1	25.45	25.45	-	1	135.61	135.61	-	1	123.37	123.37	-	1	0.49	0.49	-	3	94.81	284.43	60.38
+P7- metal DFS	1	25.07	25.07	-	1	208.20	208.20	-	-	-	-	-	1	0.00	0.00	-	2	116.64	233.27	129.49
+P14 metalDFS	1	24.18	24.18	-	1	50.10	50.10	-	1	52.40	52.40	-	1	0.00	0.00	-	3	42.23	126.68	15.67
+P17- metalDFS	1	24.18	24.18	-	1	164.62	164.62	-	1	29.02	29.02	-	1	0.00	0.00	-	3	72.61	217.82	79.72
+P21-metalDFS	1	24.18	24.18	-	-	-	-	-	-	-	-	-	1	0.00	0.00	-	1	24.18	24.18	-
+P23-metaldDFS	1	24.18	24.18	-	1	68.00	68.00	-	1	127.17	127.17	-	1	0.00	0.00	-	3	73.12	219.36	51.69
+P25-metalDFS	1	40.58	40.58	-	1	52.60	52.60	-	1	155.26	155.26	-	1	0.00	0.00	-	3	82.81	248.44	63.03
+P26-metalDFS	1	24.18	24.18	-	1	121.36	121.36	-	1	122.86	122.86	-	1	0.00	0.00	-	3	89.46	268.39	56.54
+P30-metaldDFS	1	24.18	24.18	-	1	101.89	101.89	-	1	50.23	50.23	-	1	0.00	0.00	-	3	58.77	176.30	39.55
+P32-metalDFS	1	24.18	24.18	-	-	-	-	-	-	-	-	-	1	0.00	0.00	-	1	24.18	24.18	-
+P24-metalDFS	1	24.18	24.18	-	1	37.83	37.83	-	1	34.87	34.87	-	1	0.00	0.00	-	3	32.29	96.88	7.18
+P42-metalDFS	1	31.45	31.45	-	-	-	-	-	1	24.18	24.18	-	1	0.08	0.08	-	2	27.82	55.64	5.14
+P44-metalDFS	1	27.64	27.64	-	1	24.18	24.18	-	1	26.23	26.23	-	1	0.00	0.00	-	3	26.02	78.05	1.74
+P45-metalDFS	1	24.18	24.18	-	1	62.40	62.40	-	1	29.33	29.33	-	1	0.00	0.00	-	3	38.64	115.91	20.74
+P48-metalDFS	1	24.18	24.18	-	1	207.82	207.82	-	-	-	-	-	1	0.00	0.00	-	2	116.00	232.00	129.85
+P50-metalDFS	1	24.18	24.18	-	1	32.79	32.79	-	1	35.40	35.40	-	1	0.03	0.03	-	3	30.79	92.37	5.87
+P54-metalDFS	1	30.12	30.12	-	1	77.15	77.15	-	1	79.70	79.70	-	1	0.00	0.00	-	3	62.32	186.97	27.92
+P56-metalDFS	1	24.18	24.18	-	1	79.91	79.91	-	1	85.69	85.69	-	1	0.00	0.00	-	3	63.26	189.78	33.97
+P58-metalDFS	1	25.48	25.48	-	1	109.56	109.56	-	1	24.18	24.18	-	1	0.00	0.00	-	3	53.07	159.22	48.92
+P60-metalDFS	1	27.33	27.33	-	1	70.95	70.95	-	1	24.28	24.28	-	1	0.00	0.00	-	3	40.85	122.56	26.11
+All Recordings	20	26.16	523.30	4.00	17	94.41	1604.97	56.94	16	64.01	1024.17	45.18	20	0.03	0.60	0.11	53	59.48	3152.44	49.24

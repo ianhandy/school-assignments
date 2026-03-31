@@ -1,0 +1,22 @@
+	Time to First Fixation_IRN-bft.wmv_Map_N	Time to First Fixation_IRN-bft.wmv_Map_Mean	Time to First Fixation_IRN-bft.wmv_Map_Sum	Time to First Fixation_IRN-bft.wmv_Map_Stdev	Time to First Fixation_IRN-bft.wmv_Pseudocode_N	Time to First Fixation_IRN-bft.wmv_Pseudocode_Mean	Time to First Fixation_IRN-bft.wmv_Pseudocode_Sum	Time to First Fixation_IRN-bft.wmv_Pseudocode_Stdev	Time to First Fixation_IRN-bft.wmv_queue_N	Time to First Fixation_IRN-bft.wmv_queue_Mean	Time to First Fixation_IRN-bft.wmv_queue_Sum	Time to First Fixation_IRN-bft.wmv_queue_Stdev	Time to First Fixation_IRN-bft.wmv_Not on AOI_N	Time to First Fixation_IRN-bft.wmv_Not on AOI_Mean	Time to First Fixation_IRN-bft.wmv_Not on AOI_Sum	Time to First Fixation_IRN-bft.wmv_Not on AOI_Stdev	Time to First Fixation_IRN-bft.wmv_All AOIs_N	Time to First Fixation_IRN-bft.wmv_All AOIs_Mean	Time to First Fixation_IRN-bft.wmv_All AOIs_Sum	Time to First Fixation_IRN-bft.wmv_All AOIs_Stdev
+P3	1	173.66	173.66	-	1	5.36	5.36	-	1	9.97	9.97	-	1	0.00	0.00	-	3	63.00	188.99	95.87
+P5	1	173.66	173.66	-	1	8.10	8.10	-	1	16.06	16.06	-	1	0.00	0.00	-	3	65.94	197.83	93.37
+P8- metal BFs	1	173.66	173.66	-	1	5.36	5.36	-	1	184.96	184.96	-	1	0.00	0.00	-	3	121.33	363.98	100.59
+P17- metalBFS	1	180.21	180.21	-	1	5.36	5.36	-	1	11.56	11.56	-	1	0.00	0.00	-	3	65.71	197.13	99.21
+P20-metalBFS	1	173.66	173.66	-	1	5.36	5.36	-	1	33.74	33.74	-	1	0.00	0.00	-	3	70.92	212.76	90.10
+P24-metalBFS	1	173.66	173.66	-	1	5.36	5.36	-	1	183.58	183.58	-	1	0.00	0.00	-	3	120.87	362.60	100.16
+P27-metalBFS	1	173.66	173.66	-	1	5.36	5.36	-	1	16.18	16.18	-	1	0.00	0.00	-	3	65.07	195.20	94.20
+P28-metalBFS	1	176.21	176.21	-	1	5.36	5.36	-	1	23.42	23.42	-	1	0.00	0.00	-	3	68.33	204.99	93.86
+P31-metalBFS	1	173.66	173.66	-	1	5.36	5.36	-	1	11.61	11.61	-	1	0.00	0.00	-	3	63.54	190.63	95.42
+P38-metalBFS	1	173.66	173.66	-	1	8.41	8.41	-	1	10.92	10.92	-	1	0.00	0.00	-	3	64.33	192.99	94.69
+P39-metalBFS	1	173.66	173.66	-	1	5.36	5.36	-	-	-	-	-	1	0.00	0.00	-	2	89.51	179.02	119.01
+P41-metalBFS	1	173.66	173.66	-	1	5.36	5.36	-	-	-	-	-	1	0.00	0.00	-	2	89.51	179.02	119.01
+P42-metalBFS	1	173.66	173.66	-	1	5.36	5.36	-	1	21.57	21.57	-	1	0.00	0.00	-	3	66.86	200.59	92.85
+P43-metalBFS	1	173.66	173.66	-	1	5.36	5.36	-	1	17.88	17.88	-	1	0.00	0.00	-	3	65.63	196.90	93.77
+P47- metalBFS	1	173.66	173.66	-	1	5.36	5.36	-	1	23.22	23.22	-	1	0.00	0.00	-	3	67.41	202.24	92.45
+P51-metalBFS	1	180.75	180.75	-	1	5.53	5.53	-	1	70.42	70.42	-	1	0.00	0.00	-	3	85.57	256.70	88.59
+P53-metalBFS	1	173.66	173.66	-	1	5.36	5.36	-	-	-	-	-	1	0.00	0.00	-	2	89.51	179.02	119.01
+P55-metalBFS	1	175.78	175.78	-	1	5.36	5.36	-	-	-	-	-	1	0.00	0.00	-	2	90.57	181.13	120.51
+P57-metalBFS	1	173.66	173.66	-	1	5.36	5.36	-	1	37.47	37.47	-	1	0.00	0.00	-	3	72.16	216.49	89.36
+P59-metalBFS	1	173.66	173.66	-	1	5.36	5.36	-	1	17.19	17.19	-	1	0.00	0.00	-	3	65.40	196.21	93.94
+All Recordings	20	174.58	3491.58	2.14	20	5.66	113.10	0.89	16	43.11	689.76	57.07	20	0.00	0.00	0.00	56	76.69	4294.44	80.85
