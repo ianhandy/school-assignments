@@ -1,0 +1,88 @@
+AOI name: Geospatial Map
+
+Number of Keyframes: 2
+Number of Vertices: 4
+
+Keyframe timestamp = 00:00:00.000
+Active: False
+
+X	Y
+
+548.76	74.33
+1603.31	74.33
+1603.31	1071.51
+548.76	1071.51
+
+Keyframe timestamp = 00:00:10.134
+Active: True
+
+X	Y
+
+535.61	168.21
+1590.17	168.21
+1590.17	1056.49
+535.61	1056.49
+
+
+AOI name: Pseudocode
+
+Number of Keyframes: 2
+Number of Vertices: 4
+
+Keyframe timestamp = 00:00:00.000
+Active: False
+
+X	Y
+
+19.13	168.72
+514.71	168.72
+514.71	670.44
+19.13	670.44
+
+Keyframe timestamp = 00:00:10.134
+Active: True
+
+X	Y
+
+19.13	168.72
+514.71	168.72
+514.71	670.44
+19.13	670.44
+
+
+AOI name: Queue
+
+Number of Keyframes: 3
+Number of Vertices: 4
+
+Keyframe timestamp = 00:00:00.000
+Active: False
+
+X	Y
+
+24.41	683.43
+508.82	683.43
+508.82	831.76
+24.41	831.76
+
+Keyframe timestamp = 00:00:10.134
+Active: True
+
+X	Y
+
+24.41	683.43
+508.82	683.43
+508.82	831.76
+24.41	831.76
+
+Keyframe timestamp = 00:00:27.758
+Active: True
+
+X	Y
+
+26.29	677.8
+510.69	677.8
+510.69	826.12
+26.29	826.12
+
+
