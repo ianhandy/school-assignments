@@ -1,7 +1,7 @@
 /*
- * Programmer/Student Name:
- * Date:
- * Class Description: SOLUTION
+ * Programmer/Student Name: Ian Handy
+ * Date: 3/31/26
+ * Class Description: Test driver for JBV Wobblations
  * 
  * Other Details:
  * Instructor: Clinton Rogers
