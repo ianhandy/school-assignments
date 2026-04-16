@@ -1,4 +1,4 @@
-## Homework \#3
+## Homework #3
 
 Ian Handy
 
@@ -6,11 +6,11 @@ Ian Handy
 
 ## Question 1 — Template Method (GameX)
 
-**Intent.** All games in GameX share the same high-level control flow (`initialize → makePlay → endOfGame → printWinner`) but differ in how each step is carried out. The Template Method pattern fits exactly: a fixed algorithm skeleton in an abstract base class, with each step deferred to concrete subclasses.
+Template method was created to support games as well as other applications that have the same general process, however each game has different processes used within the general process. In this example, the template method will work perfectly because there is a generic algorithm structure in the abstract base class where each part of the algorithm can be replaced with a unique implementation in each of the concrete subclasses.
 
 ### Design
 
-`Game` is the abstract base class. Its `play()` method is the *template method* — it calls the four steps in the required order and is marked `final` so subclasses cannot alter the sequence. Each step is an abstract primitive. Concrete subclasses (`Chess`, `TicTacToe`, `Checkers`) provide game-specific implementations.
+`Game` is the base abstract class. It contains the template method `play()` that is called when a new game is started. This method calls the four methods in the correct order and is declared `final` so no subclass can change the order. However, since each of these four steps are defined as primitives, they need to be implemented differently for each type of game that inherits from `Game`.
 
 ### UML Diagram
 
@@ -48,7 +48,7 @@ classDiagram
     Game <|-- Checkers
 ```
 
-### Template Method (pseudocode)
+### Pseudocode
 
 ```
 Game.play():
@@ -58,22 +58,22 @@ Game.play():
     printWinner()
 ```
 
-`play()` is the invariant algorithm — shared by every game. `initializeGame`, `makePlay`, `endOfGame`, and `printWinner` are the variable parts, implemented per subclass (e.g., Chess sets up an 8×8 board with standard pieces; TicTacToe sets up a 3×3 grid).
+In the above pseudocode, `play()` is the common algorithm structure that will always be executed in the same order. `initializeGame`, `makePlay`, `endOfGame`, and `printWinner` represent the unique parts of the algorithm that will be implemented based upon the type of game being played. For instance, in `Chess`, `initializeGame` would create an 8x8 square chessboard with standard Chess pieces placed upon it. In `TicTacToe`, `initializeGame` would create a 3x3 tic-tac-toe grid. The client does not know what type of game is being played, but can still execute the `play()` method to begin playing the current game.
 
 ---
 
 ## Question 2 — Composite + Proxy (Sandwich Pricing)
 
-**Intent.** A sandwich is built from a bread base and any number of toppings. Some toppings are themselves composed of sub-ingredients (e.g., a "Deluxe Veggie Mix" contains lettuce, tomato, onion). The client should be able to price any ingredient — leaf or group — through a single interface. That is the **Composite** pattern. On top of that, we want transparent add-ons (caching, discounts, nutrition tracking) without changing the ingredient classes themselves — that is the **Proxy** pattern.
+
+This question is about creating a sandwich application. A sandwich consists of a base and optional toppings. Toppings can contain additional items (i.e. a Deluxe Veggie Mix includes lettuce, tomato, onion). We want to calculate the cost of both individual items (toppings) and groups of items (the full sandwich) using a single interface. This represents the Composite Design pattern. Additionally, we want to include features such as price caching, discounting and nutritional information, which do not modify existing item interfaces. These requirements represent the Proxy Design pattern.
 
 ### Assumptions
 
-- Every priceable thing — a single topping, a compound topping, or the whole sandwich — implements one interface: `SandwichComponent`.
-- The sandwich itself is a composite whose children are the bread plus its toppings.
-- Prices are stable during a session but may change day-to-day, which makes caching meaningful.
-- Discounts apply to a whole subtree (e.g., 20% off the entire sandwich), so wrapping the root component is sufficient.
-- Nutrition tracking is additive across children in the same way price is — it could reuse the same composition.
-- Proxies conform to `SandwichComponent` so they can be nested (a `DiscountProxy` wrapping a `CachingProxy` wrapping a real `Sandwich`).
+- All items that can be priced (either a single item or a collection of items) implement the `SandwichComponent` interface.
+- A sandwich object is a composite object consisting of a bread and its toppings.
+- Prices are constant during a session, but may vary from session to session, making price caching valuable.
+- Discounts will be applied to entire subtrees (i.e. 20% off the entire sandwich), therefore applying a proxy to the root object suffices.
+- Nutritional information will accumulate over children in much the same manner prices do — therefore it could use the same composition.
 
 ### UML Diagram
 
@@ -123,14 +123,18 @@ classDiagram
     DiscountProxy --> SandwichComponent : wrapped
 ```
 
-### How the pieces fit together
 
-- **Composite.** `Sandwich.getPrice()` iterates its children and sums their `getPrice()` calls. Since each child is also a `SandwichComponent`, a compound topping (e.g., Deluxe Veggie Mix) can itself be a `Sandwich`-like composite with its own children. The client treats leaves and composites identically.
-- **Proxy — Caching.** `CachingProxy` wraps any `SandwichComponent`. On first `getPrice()` call it delegates to the wrapped component and stores the result; subsequent calls return the cached value. Useful for an expensive composite like a sandwich with dozens of ingredients being re-priced on every UI refresh.
-- **Proxy — Discount.** `DiscountProxy` wraps any `SandwichComponent` and returns `wrapped.getPrice() * (1 - percent)`. Applied at the root, it discounts the entire sandwich; applied to a specific child, it discounts just that subtree (e.g., "half off all veggies").
-- **Stacking proxies.** Because proxies are themselves `SandwichComponent`, they compose freely: `new DiscountProxy(new CachingProxy(sandwich), 0.1)` discounts the cached price of the whole sandwich by 10%.
+### How Do They Work Together?
 
-### Example composition
+- **Composite**: `Sandwich.getPrice()` calls `getPrice()` on each child, and sums those values. Children are also `SandwichComponent`s, so a compound topping (i.e. Deluxe Veggie Mix) can itself be a `Sandwich`-like composite containing its own children. The client treats leaves and composites identically.
+
+- **Proxy — Caching**: `CachingProxy` wraps any `SandwichComponent`. When you call `getPrice()`, if that's the first time you've asked for it, it delegates to the wrapped component and caches the result; otherwise, it simply returns the cached value. Good for something expensive like a dozen or so ingredients getting repriced on every UI update.
+
+- **Proxy — Discount**: `DiscountProxy` wraps any `SandwichComponent` and returns `wrapped.getPrice() * (1 - percent)`. Applied at the root, it discounts the entire sandwich; applied to some child, it discounts just that subtree (i.e. "half off all veggies").
+
+- **Stacking Proxies**: since proxies are themselves `SandwichComponent`s, you can compose them freely: `new DiscountProxy(new CachingProxy(sandwich), 0.1)` discounts the cached price of the whole sandwich by 10%.
+
+### Example Composition
 
 ```
 DiscountProxy(10%)
@@ -145,4 +149,4 @@ DiscountProxy(10%)
                     └── Ingredient(Onion, $0.25)
 ```
 
-The client calls `getPrice()` on the outer `DiscountProxy` and receives the final discounted total — `$5.85` — without knowing or caring whether caching, discounting, or nested composition occurred internally.
+Client asks for `getPrice()` on the outer `DiscountProxy`, and gets the final discounted total — $5.85 — without even realizing whether caching, discounting, or nested composition happened inside.
